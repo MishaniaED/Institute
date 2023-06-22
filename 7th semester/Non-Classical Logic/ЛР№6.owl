@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Настраивает -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Настраивает">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_натсройке"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Кнопочные"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Ноутбуки"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Смартфоны"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Стационарные_компьютеры"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Разрабатывает -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Разрабатывает">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Программист"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Ноутбуки"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Смартфоны"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Стационарные_компьютеры"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Ремонттрует -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Ремонттрует">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_ремонту"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Кнопочные"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Ноутбуки"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Смартфоны"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Стационарные_компьютеры"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Имя -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Имя">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Специалисты"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Производитель"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Образование -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Образование">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Специалисты"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Производитель"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Опыт_работы -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Опыт_работы">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Специалисты"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Производитель"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Производитель -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Производитель">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Электронные_устройства"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Кнопочные -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Кнопочные">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Телефоны"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_натсройке -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_натсройке">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Специалисты"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_ремонту -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_ремонту">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Специалисты"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Ноутбуки -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Ноутбуки">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Персональные_компьютеры"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Персональные_компьютеры -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Персональные_компьютеры">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Электронные_устройства"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Программист -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Программист">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Специалисты"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Смартфоны -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Смартфоны">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Телефоны"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Специалисты -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Специалисты"/>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Стационарные_компьютеры -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Стационарные_компьютеры">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Персональные_компьютеры"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Телефоны -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Телефоны">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Электронные_устройства"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Электронные_устройства -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Электронные_устройства"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#HP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#HP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Ноутбуки"/>
+        <Производитель>США</Производитель>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Lenovo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Lenovo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Ноутбуки"/>
+        <Производитель>Южная Корея</Производитель>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Mac_Pro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Mac_Pro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Стационарные_компьютеры"/>
+        <Производитель>США</Производитель>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Nokia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Nokia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Кнопочные"/>
+        <Производитель>Финляндия</Производитель>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Xiomi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Xiomi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Смартфоны"/>
+        <Производитель>Китай</Производитель>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_настройке1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_настройке1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_натсройке"/>
+        <Настраивает rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Xiomi"/>
+        <Имя>Кирилл</Имя>
+        <Образование>Основное</Образование>
+        <Опыт_работы rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</Опыт_работы>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_настройке2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_настройке2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_натсройке"/>
+        <Настраивает rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#HP"/>
+        <Имя>Евгений</Имя>
+        <Образование>Среднее</Образование>
+        <Опыт_работы rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Опыт_работы>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_ремонту1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_ремонту1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_ремонту"/>
+        <Ремонттрует rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Mac_Pro"/>
+        <Имя>Александр</Имя>
+        <Образование>Высшее</Образование>
+        <Опыт_работы rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</Опыт_работы>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_ремонту2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_ремонту2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Мастер_по_ремонту"/>
+        <Ремонттрует rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Mac_Pro"/>
+        <Имя>Виктор</Имя>
+        <Образование>Среднее спец.</Образование>
+        <Опыт_работы rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Опыт_работы>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Программист1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Программист1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Программист"/>
+        <Разрабатывает rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Lenovo"/>
+        <Имя>Иван</Имя>
+        <Образование>Высшее не оконченное</Образование>
+        <Опыт_работы rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</Опыт_работы>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Программист2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Программист2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/misha/ontologies/2022/11/untitled-ontology-2#Программист"/>
+        <Имя>Анатолий</Имя>
+        <Образование>Высшее</Образование>
+        <Опыт_работы rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</Опыт_работы>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

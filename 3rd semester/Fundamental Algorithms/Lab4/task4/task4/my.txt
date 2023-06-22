@@ -1,0 +1,4 @@
+qq ww ee 10 10 2002 q 3
+yy tt rr 11 10 2001 t 4
+qqq www ee 10 10 2001 qq 22
+Ivanov Ivan Ivanovich 11 10 2000 qq 1211

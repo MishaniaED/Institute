@@ -1,0 +1,88 @@
+﻿<Window x:Class="Validator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Validator" xmlns:ViewModel="clr-namespace:Validator.VM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    
+    <Window.DataContext>
+        <ViewModel:BeginVM1/>
+    </Window.DataContext>
+    
+    <Grid Margin="10,10,10,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" Margin="5,5,5,5">
+            <Label FontSize="16"> ФИО: </Label>
+            <TextBox  Text="{Binding Path=Name, Mode=OneWayToSource}" TextWrapping="Wrap" FontSize="16" 
+                      Style="{Binding StyleOfTextField,
+                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="0" Margin="5,5,5,5">
+            <Label FontSize="16">Номер(а) телефона(ов), через запятую:</Label>
+            <TextBox  Text="{Binding Path=Phones, Mode=OneWayToSource}" TextWrapping="Wrap" FontSize="16" 
+                      Style="{Binding StyleOfTextField,
+                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="0" Margin="5,5,5,5">
+            <Label FontSize="16">Электронная почта(ы), через запятую:</Label>
+            <TextBox  Text="{Binding Path=Emails, Mode=OneWayToSource}" TextWrapping="Wrap" FontSize="16" 
+                      Style="{Binding StyleOfTextField,
+                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="0" Margin="5,5,5,5">
+            <Label FontSize="16">Адрес(а), через точку с запятой:</Label>
+            <TextBox  Text="{Binding Path=Adress, Mode=OneWayToSource}" TextWrapping="Wrap" FontSize="16" 
+                      Style="{Binding StyleOfTextField,
+                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="4" Grid.Column="0" Margin="5,5,5,5">
+            <Label FontSize="16">Паспорт (Серия-Номер):</Label>
+            <TextBox  Text="{Binding Path=Pasport, Mode=OneWayToSource}" TextWrapping="Wrap" FontSize="16" 
+                      Style="{Binding StyleOfTextField,
+                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="6" Grid.Column="0" >
+            <Label FontSize="16">Введите дату рождения:</Label>
+            <DatePicker SelectedDate="{Binding Path=BirthDateD, Mode=OneWayToSource}" Name="datePicker1" Margin="5,5,5,5" FontSize="14"
+                        Style="{Binding StyleOfTextField,
+                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}"/>
+        </StackPanel>
+
+
+        <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="5,5,5,5">
+            <Label FontSize="18">Ваш Guid:</Label>
+            <TextBlock TextWrapping="Wrap" FontSize="16" Text="{Binding Guid, Mode=OneWay}"
+                      />
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="1" Margin="5,5,5,5" Grid.RowSpan="3">
+            <Label FontSize="18">Проверка ваших данных:</Label>
+            <TextBox TextWrapping="Wrap" FontSize="16" Grid.RowSpan="2"
+                      Text="{Binding ValidationResult, Mode=OneWay}" IsEnabled="False" TextAlignment="Center"/>
+        </StackPanel>
+
+        <Button Grid.Column="1" Grid.Row="5" Margin="10,10,10,10" FontSize="20" FontStyle="Italic" Command="{Binding SendInfoCommand}">
+            Отправить данные на валидацию
+        </Button>
+
+    </Grid>
+</Window>

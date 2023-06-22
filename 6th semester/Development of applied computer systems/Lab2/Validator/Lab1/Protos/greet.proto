@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+option csharp_namespace = "Validator.ValidServerNamespace";
+
+package greet;
+
+
+service ValidServer {
+  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc SendInfoForValidation (InfoStructure) returns (ValidationInfo);
+}
+
+message InfoStructure {
+  string fio = 1;
+  string phones = 2;
+  string emails = 3;
+  string adresses = 4;
+  string pasport = 5;
+  string birthday = 6;
+}
+
+message ValidationInfo {
+	bool fio = 1;
+	bool phones = 2;
+	bool emails = 3;
+	bool adresses = 4;
+	bool pasport = 5;
+	bool birthday = 6;
+    string curGuid = 7;
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+}

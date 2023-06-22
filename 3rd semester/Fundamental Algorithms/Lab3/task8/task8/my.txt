@@ -1,0 +1,37 @@
+read(A, 2);
+write(A, 2);
+
+read({B, 2);
+write(B, 2);
+
+C := A + {wkrjwkrjwrw wr w rrw
+wrkjr kjw #wkrjkwrjrwrw
+#hwrjhwrwrw {wrjkwrw} }B;
+write(C, 2);
+
+C := A & B;
+write(C, 2);
+% 000מû90י0ימ C := A -> B;
+C := A -> B;
+write(C, 2);
+
+C := A <- B;
+write(C, 2);
+
+C := A ~ B;
+write(C, 2);
+
+C := A <> B;
+write(C, 2);
+
+C := A +> B;
+write(C, 2);
+
+C := A ? B;
+write(C, 2);
+
+C := A ! B;
+write(C, 2);
+
+Ñ := \A;
+write(C, 2);

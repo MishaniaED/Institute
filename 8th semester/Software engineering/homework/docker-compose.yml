@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=dbForum
+      - POSTGRES_USER=Mikhail
+      - POSTGRES_PASSWORD=1234
+      - PGDATA=/var/lib/postgresql/data
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "echo 'SELECT 1;' | psql -U Mikhail -d dbForum" ]
+      interval: 3s
+      timeout: 5s
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    networks:
+      - db
+
+  nginx:
+    image: nginx:1.21.4
+    ports:
+      - "8080:8080"
+    networks:
+      - db
+    depends_on:
+      myproject:
+        condition: service_healthy
+    volumes:
+      - ./nginx-1.24.0/conf/nginx.conf:/etc/nginx/nginx.conf
+
+  myproject:
+    build: ./myproject
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    networks:
+      - db
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD", "curl", "--fail", "http://localhost:8000/" ]
+      interval: 3s
+      timeout: 5s
+    restart: unless-stopped
+
+networks:
+    db:
+      driver: bridge
+
+volumes:
+  db_data:

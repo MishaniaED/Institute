@@ -1,0 +1,4 @@
+myvar=0;
+a=myvar;
+b=1;
+c=a+d;

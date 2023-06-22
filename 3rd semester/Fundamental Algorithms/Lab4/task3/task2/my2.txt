@@ -1,0 +1,3 @@
+prior=2 task='Задание 11'
+prior=2 task='Задание 12'
+prior=5 task='Задание 13'

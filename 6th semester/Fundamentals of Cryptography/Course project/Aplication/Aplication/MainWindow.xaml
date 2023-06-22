@@ -1,0 +1,49 @@
+﻿<Window x:Class="Aplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" Margin="590,139,28,164">
+            <Button x:Name="Encrypt" Content="Зашифровать" Click="Button_Click" Height="52" Width="189"/>
+            <Button x:Name="Decrypt" Content="Расшифровать" RenderTransformOrigin="0.527,0.47" Height="53" Width="189" Click="Decrypt_Click"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Margin="10,102,554,247">
+            <TextBlock TextWrapping="Wrap" Text="Выбирите режим алгоритм шифрования:" Height="35" Width="243"/>
+            <RadioButton x:Name="RB_Sepent" Content="Serpent" Height="22" Width="97" IsChecked="True"/>
+            <RadioButton x:Name="RB_ElGamal" Content="ElGamal" Height="22" Width="100"/>
+        </StackPanel>
+        <TextBlock TextWrapping="Wrap" Text="Введите ключ:" Margin="10,192,700,217"/>
+        <TextBox x:Name="KeyField" TextWrapping="Wrap" Text="serpent1234" Width="120" Margin="110,192,583,217"/>
+        <Button x:Name="Button1" Content="Выбрать файл" Click="btnOpenFile_Click" Margin="38,22,630,356" />
+        <StackPanel Orientation="Vertical" Margin="304,149,284,148">
+            <TextBlock TextWrapping="Wrap" Text="Выбирите режим шифрования для Serpent" Height="50" Width="204"/>
+            <ComboBox x:Name="EncryptMode" Height="30" SelectedIndex="4" Width="225">
+                <TextBlock><Run Text="ECB"/></TextBlock>
+                <TextBlock><Run Text="CBC"/></TextBlock>
+                <TextBlock><Run Text="CFB"/></TextBlock>
+                <TextBlock><Run Text="OFB"/></TextBlock>
+                <TextBlock><Run Text="CTR"/></TextBlock>
+                <TextBlock><Run Text="RD"/></TextBlock>
+                <TextBlock><Run Text="RDH"/></TextBlock>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Margin="304,317,284,17">
+            <TextBlock TextWrapping="Wrap" Text="Процесс шифрования" Height="34" Width="219"/>
+            <ProgressBar x:Name="ProgressBarEncryption" Height="32" Width="221"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="321,22,28,356">
+            <TextBlock TextWrapping="Wrap" Text="Имя выбранного файла:" Height="52" Width="188"/>
+            <TextBlock x:Name="FileName" TextWrapping="Wrap" Text="Здесь будет отображен путь к файлу" Height="53" Width="257"/>
+        </StackPanel>
+    </Grid>
+</Window>

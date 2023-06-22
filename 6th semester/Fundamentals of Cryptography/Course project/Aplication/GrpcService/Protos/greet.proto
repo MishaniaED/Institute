@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService";
+
+package greet;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc SayGoodBye (GoodByeRequest) returns (GoodByeReply);
+  rpc SendFile (FileBuffer) returns (IsWritten);
+  rpc TakeFile (WhichFile) returns (FileBuffer);
+  rpc TakeAllFilesNames (HelloRequest) returns (FileList);
+}
+
+message FileList{
+
+}
+
+message WhichFile{
+	string filename = 1;
+}
+
+message UserList{
+	string files = 1;
+}
+
+message IsWritten{
+	bool isWrittenOnServer = 1;
+}
+
+message FileBuffer{
+	string filename = 1;
+}
+
+message GoodByeRequest{
+
+}
+
+message GoodByeReply{
+
+}
+
+
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
+
+

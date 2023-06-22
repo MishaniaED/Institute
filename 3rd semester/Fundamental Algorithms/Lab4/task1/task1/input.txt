@@ -1,0 +1,17 @@
+Load a, in.txt
+Save A, in2.txt
+Rand B, 5, 2, 10
+Rand C, 10, -10, 10
+Concat A, b
+Free(A)
+Remove C, 1, 2
+Copy C, 0, 2, b
+Print C, 0, 5
+Sort C-
+Print C, all
+Sort C+
+Permute C
+Print C, all
+Stat C
+Print C, 0, 6
+Print B, all

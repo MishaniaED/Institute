@@ -1,0 +1,2 @@
+Value change of A to 10 in base 2
+Value output of A in base 2 (Value: 10)

@@ -1,0 +1,561 @@
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage[dvips]{graphicx}
+\usepackage{color}
+\usepackage[dvips]{hyperref}
+
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{textcomp}
+\usepackage{ifthen}
+\usepackage{calc}
+
+\usepackage[cache=false]{minted}
+
+\hypersetup{%
+	unicode,%
+	linkcolor=blue,
+	colorlinks=true,%
+%	pdfpagemode=FullScreen,%
+%	pdfpagetransition=Dissolve,%
+	pdftitle={Курсовая работа по дисциплине "Операционные системы и архитектура ПК"},%
+}
+
+
+\thispagestyle{empty}
+
+\setlength{\voffset}{-.8in}
+\setlength{\hoffset}{-.75in}
+\addtolength{\textheight}{1.6in}
+\addtolength{\textwidth}{1.5in}
+
+
+\onehalfspacing
+
+%Поменяйте фамилию, имя и отчество в команде FIO
+\newcommand{\FIO}{Иванов Иван Иванович}
+
+%Поменяйте название программного продукта в команде SOFTWARE
+\newcommand{\SOFTWARE}{Вставить название}
+
+%Укажите номер группы (210 или 211)
+\newcommand{\GROUP}{210}
+
+\setcounter{tocdepth}{2}
+\begin{document}
+\input{titulCW}
+\newpage
+
+\tableofcontents
+\newpage
+\
+\part{Теоретическая}
+
+\section{Название вопроса 1}
+%Вставить название вопроса 1
+%Описать теоретический вопрос № 1
+
+\section{Название вопроса 2}
+%Вставить название вопроса 2
+%Описать теоретический вопрос № 2
+\newpage
+
+\part{Практическая}
+%В каждом из подразделов нужно описать 
+\section{Простые стандартные алгоритмы}
+\subsection{Алгоритм Евклида} 
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом. Реализация алгоритма представлена в подразделе \ref{code:evclid}.
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Корректность расстановки скобок}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Переполнение}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Куб в виде суммы}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Числа Фибоначчи}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Сумма квадратов}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+\newpage
+
+\section{Работа с файловой системой}
+\subsection{Используемые системные объекты}
+Опишите используемые в лабораторной системные объекты: что, зачем, как используется.
+
+\subsection{Реализация ls}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Реализация ls без папок}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Жёсткая ссылка}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Символическая ссылка}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Сортировка файлов}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+\newpage
+
+\section{Работа с процессами}
+\subsection{Используемые системные объекты}
+Опишите используемые в лабораторной системные объекты: что, зачем, как используется.
+
+\subsection{Порождение процессов}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Иерархия процессов}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Подсчёт факториалов}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+\newpage
+
+\section{Работа с семафорами}
+\subsection{Используемые системные объекты}
+Опишите используемые в лабораторной системные объекты: что, зачем, как используется.
+
+\subsection{Задача читателей и писателей}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Семафоры и разделяемая память}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+\newpage
+
+\section{Работа с каналами и сообщениями}
+\subsection{Используемые системные объекты}
+Опишите используемые в лабораторной системные объекты: что, зачем, как используется.
+
+\subsection{Численное нахождение интеграла}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Нахождение корней кубического уравнения}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+\newpage
+
+\section{Сетевое программирование}
+\subsection{Используемые системные объекты}
+Опишите используемые в лабораторной системные объекты: что, зачем, как используется.
+
+\subsection{Подсчёт слов}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+
+\subsection{Чат}
+\subsubsection{Техническое задание}
+Опишите постановку задачи
+
+\subsubsection{Описание основного алгоритма}
+Опишите алгоритм только не кодом
+
+\subsubsection{Руководство пользователя}
+Опишите работу пользователя и вставьте скриншот
+\newpage
+
+\section{ПО <<\SOFTWARE>>}
+
+\subsection{Техническое задание}
+Требуется вставить техническое задание на Ваше ПО. 
+
+Описать функциональные возможности приложения 
+
+Описать входные данные, принимаемые приложением
+
+\subsection{Структура приложения}
+Описывается логика работы приложения, основые блоки и модули, а также взаимодействие между ними.
+Перечислить разработанные модули и функции.  
+Описать последовательность вызовов функций. 
+
+\subsection{Основные алгоритмы}
+Здесь приводятся алгоритмы, используемые автором
+
+Описать работу каждой функции: входные и выходные параметры, схему работы (блок-схема, псевдокод или словесное описание).
+
+Не в виде кода!!!
+
+\subsection{Руководство пользователя}
+Описать интерфейс приложения и взаимодействие с пользователем.
+
+Привести пример корректной работы приложения (со скриншотами).
+
+Описать реакцию приложения на аномалии входных данных.
+
+\section{Список использованных источников}
+Здесь должен быть список литературы, статей и прочих материалов, использованных в работе. 
+\newpage
+
+\section{Приложение}
+Здесь приводится код. Каждый файл в своём подразделе.
+
+\subsection{Алгоритм Евклида}\label{code:evclid}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Корректность расстановки скобок}\label{code:scobe}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Переполнение}\label{code:overfull}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Куб в виде суммы}\label{code:cube}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Числа Фибоначчи}\label{code:fib}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Сумма квадратов}\label{code:summ}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Реализация ls}\label{code:ls}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Реализация ls без папок}\label{code:ls-cat}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Жёсткая ссылка}\label{code:hardlink}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Символическая ссылка}\label{code:symlink}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Сортировка файлов}\label{code:sort}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Порождение процессов}\label{code:process}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Иерархия процессов}\label{code:hierarchy}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Подсчёт факториалов}\label{code:factorial}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Задача читателей и писателей}\label{code:read-write}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Семафоры и разделяемая память}\label{code:sem-shm}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Численное нахождение интеграла}\label{code:pi}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Нахождение корней кубического уравнения}\label{code:cube-equation}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Подсчёт слов}\label{code:wordcount}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{Чат}\label{code:chat}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\subsection{ПО <<\SOFTWARE>>}\label{code:soft}
+\centerline{\textbf{Файл \texttt{main.c}}}
+\begin{minted}{C}
+#include<stdio.h>
+int main(){	
+	printf("hello, world!\n");
+	return 0;
+}
+\end{minted}
+\hrulefill
+
+\end{document}

@@ -1,0 +1,9 @@
+1	Arina	Chan	211	5,000000
+5	Faradeya	Margentalle	121	4,600000
+2	Lapis	Stella	231	3,200000
+3	Yona	Zise	121	1,600000
+Средний балл за все экзамены = 3,600000
+
+Студенты, чей средний балл за все экзамены выше среднего: 
+Arina	Chan
+Faradeya	Margentalle

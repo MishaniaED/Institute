@@ -1,0 +1,4 @@
+str ¹1 have 12 letters
+str ¹2 have 0 letters
+str ¹3 have 3 letters
+str ¹4 have 0 letters
